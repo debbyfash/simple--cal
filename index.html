@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Calculator App</h1>
+                <form >
+                    <div class="form-row">
+                        <div class="col-md-12 form-group">
+                            <input type="text" id="Result" placeholder="Result" >
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="Operand1" placeholder="Operand1" >
+                        </div>
+
+                    
+                        <div class="col-md-6 form-group">
+                            <input type="text" id="Operand2" placeholder="Operand2" >
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="col-md-6 pt-2">
+                            <input type="button" id="Operator1" class="btn btn-info" value="+" onclick=cal(this.id)></input>
+                        </div>
+
+                        <div class="col-md-6 pt-2">
+                            <input type="button" id="Operator2" class="btn btn-info" value="-" onclick=cal(this.id)></input>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 pt-2">
+                            <input type="button" id="Operator3" class="btn btn-info" value="/" onclick=cal(this.id)></input>
+                        </div>
+
+                    <div class="col-md-6 pt-2">
+                            <input type="button" id="Operator4" class="btn btn-info" value="*" onclick=cal(this.id)></input>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 pt-2">
+                            <input type="button" id="Operator5" class="btn btn-info" value="%" onclick=cal(this.id)></input>  
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
